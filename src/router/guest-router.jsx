@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom"
-import { LoginPage, SignupPage } from "../pages"
+import { ConfirmCodePage, LoginPage, SignupPage } from "../pages"
 
 const guestRouter = createBrowserRouter([
   {
@@ -9,6 +9,10 @@ const guestRouter = createBrowserRouter([
   {
     path: "/signup",
     element: <SignupPage />,
+  },
+  {
+    path: "confirm-code",
+    element: <ConfirmCodePage />,
   },
 ])
 
